@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postuler à un Travail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulaire de Candidature</h1>
+    <form id="application-form" action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="cv">Télécharger votre CV (PDF uniquement):</label>
+        <input type="file" id="cv" name="cv" accept=".pdf" required>
+        
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+        
+        <label for="date-naissance">Date de Naissance:</label>
+        <input type="date" id="date-naissance" name="date-naissance" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telephone">Numéro de Téléphone:</label>
+        <input type="tel" id="telephone" name="telephone" required>
+        
+        <label for="nationalite">Nationalité:</label>
+        <input type="text" id="nationalite" name="nationalite" required>
+        
+        <label for="documents">Télécharger d'autres documents:</label>
+        <input type="file" id="documents" name="documents" multiple>
+
+        <button type="submit">Envoyer la Candidature</button>
+    </form>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
