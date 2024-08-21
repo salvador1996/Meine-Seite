@@ -46,3 +46,8 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+#confirmText {
+    text-align: center;
+    padding: 10px;
+}
